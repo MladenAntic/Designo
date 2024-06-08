@@ -11,7 +11,7 @@ import LocationInfo from "@/components/location/LocationInfo";
 const Page = () => {
   const Map = useMemo(
     () =>
-      dynamic(() => import("@/components/map/"), {
+      dynamic(() => import("@/components/Map"), {
         loading: () => (
           <Skeleton className="size-full rounded-[15px] bg-light-peach" />
         ),
